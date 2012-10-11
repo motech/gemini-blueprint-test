@@ -1,12 +1,9 @@
 *.class
-
-# Package Files #
-*.jar
 *.war
 *.ear
 .idea
 .settings
 *.iml
-target
+target/
 fwdir
 .springBeans
