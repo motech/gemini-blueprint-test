@@ -68,7 +68,7 @@
 
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
+            <artifactId>org.springframework.test</artifactId>
             <version>3.1.0.RELEASE</version>
             <exclusions>
                 <!-- exclude spring-test junit (3.8.1) -->
@@ -250,7 +250,7 @@
                         <instructions>
                             <Bundle-Activator>org.eclipse.gemini.blueprint.test.internal.support.Activator</Bundle-Activator>
                             <Export-Package>
-                                org.eclipse.gemini.*;version=${project.version}
+                                org.eclipse.gemini.blueprint.test.*;version=${project.version}
                             </Export-Package>
                             <Import-Package>
                                 org.osgi.framework;version=1.3,
@@ -263,7 +263,7 @@
                                 org.eclipse.*;resolution:=optional,
                                 org.knopflerfish.*;resolution:=optional,
                                 org.apache.felix.*;resolution:=optional,
-                                junit.*;version=3.8,
+                                junit.*;version=4.9.0,
                                 *;resolution:=optional
                             </Import-Package>
                             <Bundle-Vendor>Gemini-Test</Bundle-Vendor>
